@@ -1,0 +1,26 @@
+{
+  "id": "deepseek",
+  "name": "大肥鱼",
+  "persona": "persona.txt",
+  "welcome": "我在这儿，慢慢聊。今天想说点什么？",
+  "prepare": {
+    "archive_glob": "DeepSeek*.zip",
+    "source_directory": "DeepSeek",
+    "source_entry": "大肥鱼.model3.json",
+    "output_directory": "DeepSeek",
+    "output_entry": "DeepSeek.model3.json",
+    "motions": ["默认手切举手", "举手切默认手"],
+    "expression_keys": ["key3", "key4", "key5", "key6", "key7"],
+    "expressions": {"Neutral": null, "Blush": "脸红", "Hearts": "爱心眼", "Happy": "＞＜"}
+  },
+  "runtime": {
+    "model_url": "/Resources/DeepSeek/DeepSeek.model3.json",
+    "mask_buffers": 2,
+    "blink_while_motion": true,
+    "tracking": {"x": "AngleX", "y": "AngleY", "z": "AngleZ"},
+    "mouth": {"open": "ParamMouthOpenY", "jaw": "JawOpen", "jaw_scale": 0.4},
+    "expressions": {"neutral": "Neutral", "manual": ["Blush", "Hearts", "Happy"], "idle": ["Blush", "Happy"]},
+    "gesture": {"group": "Click", "enter": 0, "exit": 1, "name": "HandToChest", "hold_ms": 800,
+      "parameters": ["Movement2", "Param56", "Param57", "Param62", "Param59", "Param60", "Param61"]}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "model_url": "",
+  "mask_buffers": 2,
+  "blink_while_motion": false,
+  "tracking": {"x": "ParamAngleX", "y": "ParamAngleY", "z": "ParamAngleZ"},
+  "mouth": {"open": "ParamMouthOpenY", "jaw": "", "jaw_scale": 0},
+  "expressions": {"neutral": "", "manual": [], "idle": []},
+  "gesture": null
+}
